@@ -1,12 +1,12 @@
 import "./styles/style.scss";
 import "./components/Header.jsx";
-import "./components/ExtensionList.jsx";
+import "./components/ExtContainer.jsx";
 
 export default function App() {
   return (
     <>
       <Header />
-      <ExtensionList />
+      <ExtContainer />
     </>
   );
 }
