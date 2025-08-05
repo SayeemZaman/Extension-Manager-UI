@@ -1,12 +1,9 @@
 import Extension from "./Extension";
 import { data } from "../data.js";
+import { useState } from "react";
 
 export default function ExtensionList() {
-  return (
-    <div id="list">
-      {data.map((ext, index) => {
-        <Extension name={ext.name} logo={ext.logo} desc={ext.desc} />;
-      })}
-    </div>
-  );
+  const [extensionList, setExtensionList] = useState([{}]);
+
+  return <div id="list">{data.map((ext, index) => {})}</div>;
 }
