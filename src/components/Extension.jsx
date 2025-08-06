@@ -3,10 +3,10 @@ import Switch from "./Switch";
 import { useState } from "react";
 
 export default function Extension({ name, desc, logo, isActive }) {
-  const [isActive, setIsActive] = useState(isActive);
+  const [isOn, setIsOn] = useState(isActive);
 
   return (
-    <div className={`extension ${isActive ? "activeExt" : "disabledExt"}`}>
+    <div className={`extension ${isOn ? "activeExt" : "disabledExt"}`}>
       <img className="logo" src={logo} alt="Extension Logo" />
       <p>{name}</p>
       <p>{desc}</p>
