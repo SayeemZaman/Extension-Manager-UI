@@ -12,7 +12,7 @@ export default function Extension({ name, desc, logo, isActive }) {
       <p>{desc}</p>
       <div>
         <RemoveBtn />
-        <Switch />
+        <Switch isActive={isActive} />
       </div>
     </div>
   );
