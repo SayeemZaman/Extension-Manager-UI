@@ -1,4 +1,3 @@
-import "./styles/style.scss";
 import "./components/Header.jsx";
 import "./components/ExtContainer.jsx";
 
