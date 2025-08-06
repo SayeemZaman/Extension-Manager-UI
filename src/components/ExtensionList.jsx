@@ -16,7 +16,14 @@ export default function ExtensionList() {
       },
     ]);
 
-    return <Extension logo />;
+    return (
+      <Extension
+        name={ext.name}
+        desc={ext.description}
+        logo={ext.logo}
+        isActive={ext.isActive}
+      />
+    );
   }
 
   return <div id="list">{data.map((ext, index) => setExt(ext))}</div>;
