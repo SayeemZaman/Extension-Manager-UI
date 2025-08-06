@@ -1,15 +1,15 @@
-import img1 from "../assets/images/logo-devlens.svg";
-import img2 from "../assets/images/logo-style-spy.svg";
-import img3 from "../assets/images/logo-speed-boost.svg";
-import img4 from "../assets/images/logo-json-wizard.svg";
-import img5 from "../assets/images/logo-tab-master-pro.svg";
-import img6 from "../assets/images/logo-viewport-buddy.svg";
-import img7 from "../assets/images/logo-markup-notes.svg";
-import img8 from "../assets/images/logo-grid-guides.svg";
-import img9 from "../assets/images/logo-pallette-picker.svg";
-import img10 from "../assets/images/logo-links-checker.svg";
-import img11 from "../assets/images/logo-dom-snapshot.svg";
-import img12 from "../assets/images/logo-console-plus.svg";
+import img1 from "./assets/images/logo-devlens.svg";
+import img2 from "./assets/images/logo-style-spy.svg";
+import img3 from "./assets/images/logo-speed-boost.svg";
+import img4 from "./assets/images/logo-json-wizard.svg";
+import img5 from "./assets/images/logo-tab-master-pro.svg";
+import img6 from "./assets/images/logo-viewport-buddy.svg";
+import img7 from "./assets/images/logo-markup-notes.svg";
+import img8 from "./assets/images/logo-grid-guides.svg";
+import img9 from "./assets/images/logo-palette-picker.svg";
+import img10 from "./assets/images/logo-link-checker.svg";
+import img11 from "./assets/images/logo-dom-snapshot.svg";
+import img12 from "./assets/images/logo-console-plus.svg";
 
 export const data = [
   {
