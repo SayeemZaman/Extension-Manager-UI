@@ -5,10 +5,11 @@ import { useState } from "react";
 export default function ExtensionList() {
   const [extList, setExtList] = useState([{}]);
 
-  function setExt(ext) {
+  function setExt(ext, id) {
     setExtensionList((prev) => [
       ...prev,
       {
+        id: id,
         logo: ext.logo,
         name: ext.name,
         desc: ext.description,
@@ -18,6 +19,7 @@ export default function ExtensionList() {
 
     return (
       <Extension
+        id={id}
         name={ext.name}
         desc={ext.description}
         logo={ext.logo}
@@ -26,5 +28,5 @@ export default function ExtensionList() {
     );
   }
 
-  return <div id="list">{data.map((ext, index) => setExt(ext))}</div>;
+  return <div id="list">{data.map((ext, index) => setExt(ext, index))}</div>;
 }

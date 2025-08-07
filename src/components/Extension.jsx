@@ -2,7 +2,7 @@ import RemoveBtn from "./RemoveBtn";
 import Switch from "./Switch";
 import { useState } from "react";
 
-export default function Extension({ name, desc, logo, isActive }) {
+export default function Extension({ id, name, desc, logo, isActive }) {
   const [isOn, setIsOn] = useState(isActive);
 
   function remove() {}
