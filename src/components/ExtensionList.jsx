@@ -24,8 +24,13 @@ export default function ExtensionList() {
         desc={ext.description}
         logo={ext.logo}
         isActive={ext.isActive}
+        remove={remove}
       />
     );
+  }
+
+  function remove(idToRemove) {
+    setExtList((prev) => prev.filter((id) => id !== idToRemove));
   }
 
   return <div id="list">{data.map((ext, index) => setExt(ext, index))}</div>;

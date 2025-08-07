@@ -2,10 +2,8 @@ import RemoveBtn from "./RemoveBtn";
 import Switch from "./Switch";
 import { useState } from "react";
 
-export default function Extension({ id, name, desc, logo, isActive }) {
+export default function Extension({ id, name, desc, logo, isActive, remove }) {
   const [isOn, setIsOn] = useState(isActive);
-
-  function remove() {}
 
   return (
     <div className={`extension ${isOn ? "activeExt" : "disabledExt"}`}>
@@ -15,7 +13,7 @@ export default function Extension({ id, name, desc, logo, isActive }) {
       <div>
         <RemoveBtn />
         <Switch isActive={isActive} />
-        <RemoveBtn onClick={remove} />
+        <RemoveBtn onClick={() => remove(id)} />
         <Switch />
       </div>
     </div>
