@@ -1,4 +1,3 @@
-import RemoveBtn from "./RemoveBtn";
 import Switch from "./Switch";
 import { useState } from "react";
 
@@ -11,10 +10,8 @@ export default function Extension({ id, name, desc, logo, isActive, remove }) {
       <p>{name}</p>
       <p>{desc}</p>
       <div>
-        <RemoveBtn />
-        <Switch isActive={isActive} />
         <RemoveBtn onClick={() => remove(id)} />
-        <Switch />
+        <Switch isActive={isOn} />
       </div>
     </div>
   );
