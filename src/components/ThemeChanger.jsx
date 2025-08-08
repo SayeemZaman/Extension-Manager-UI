@@ -8,7 +8,7 @@ export default function ThemeChanger() {
 
   return (
     <button id="themeChanger" onClick={() => setTheme(!theme)}>
-      <img src={theme == "light" ? light : dark} alt="Theme Changer Button" />
+      <img src={theme == "light" ? dark : light} alt="Theme Changer Button" />
     </button>
   );
 }
