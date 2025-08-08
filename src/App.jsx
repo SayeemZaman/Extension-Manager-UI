@@ -1,5 +1,5 @@
-import "./components/Header.jsx";
-import "./components/ExtContainer.jsx";
+import Header from "./components/Header.jsx";
+import ExtContainer from "./components/ExtContainer.jsx";
 import { Theme } from "./contexts/theme.jsx";
 import { useState } from "react";
 
@@ -7,11 +7,11 @@ export default function App() {
   const [theme, setTheme] = useState("light");
 
   return (
-    <div className={`${theme} "App"`}>
-      <Theme.Provider value={{ theme, setTheme }}>
+    <Theme.Provider value={{ theme, setTheme }}>
+      <div className={`${theme} App`}>
         <Header />
         <ExtContainer />
-      </Theme.Provider>
-    </div>
+      </div>
+    </Theme.Provider>
   );
 }
