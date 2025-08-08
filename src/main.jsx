@@ -11,7 +11,4 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <App />
-  </StrictMode>
-);
-
-console.alert("Rendered");
+  </StrictMode
