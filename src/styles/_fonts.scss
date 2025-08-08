@@ -1,0 +1,27 @@
+/* Fonts */
+
+@font-face {
+  font-family: NotoSans-Regular;
+  src: url(../assets/fonts/NotoSans-Regular.ttf);
+}
+@font-face {
+  font-family: NotoSans-Medium;
+  src: url(../assets/fonts/NotoSans-Medium.ttf);
+}
+@font-face {
+  font-family: NotoSans-Bold;
+  src: url(../assets/fonts/NotoSans-Bold.ttf);
+}
+
+@mixin reg-font{
+  font-family: NotoSans-Regular, Arial, sans-serif;
+  font-weight: 400;
+}
+@mixin med-font{
+  font-family: NotoSans-Medium, Arial, sans-serif;
+  font-weight: 500;
+}
+@mixin bold-font{
+  font-family: NotoSans-Bold, Arial, sans-serif;
+  font-weight: 700;
+}
