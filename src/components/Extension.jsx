@@ -10,7 +10,7 @@ export default function Extension({ id, name, desc, logo, isActive, remove }) {
       <p>{name}</p>
       <p>{desc}</p>
       <div>
-        <RemoveBtn onClick={() => remove(id)} />
+        <button onClick={() => remove(id)}>Remove</button>
         <Switch isActive={isOn} />
       </div>
     </div>
