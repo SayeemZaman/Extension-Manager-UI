@@ -1,9 +1,10 @@
 {
   "name": "react",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "keywords": [],
-  "main": "src/index.tsx",
+  "main": "src/main.jsx",
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
