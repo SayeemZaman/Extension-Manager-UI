@@ -49,3 +49,10 @@ header{
     color: $neutral0;
   }
 }
+
+.title{
+  width: 100%;
+  text-align: center;
+  @include bold-font;
+  color: $neutral900;
+}
