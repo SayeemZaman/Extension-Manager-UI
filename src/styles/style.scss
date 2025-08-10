@@ -56,3 +56,10 @@ header{
   @include bold-font;
   color: $neutral900;
 }
+
+#list{
+  gap: 8px;
+  display: flex;
+  margin-top: 16px;
+  flex-direction: column;
+}
