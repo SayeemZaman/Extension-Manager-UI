@@ -1,5 +1,5 @@
-@import "colors";
-@import "fonts";
+@use "./colors" as *;
+@use "./fonts" as *;
 
 @mixin shadow{}
 
