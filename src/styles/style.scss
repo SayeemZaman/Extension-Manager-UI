@@ -33,3 +33,19 @@ header{
     border-radius: 8px;
   }
 }
+
+#filterContainer{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  .filter{
+    padding: 8px 12px;
+    border-radius: 16px;
+    @include med-font;
+  }
+  .selected{
+    background-color: $red700;
+    color: $neutral0;
+  }
+}
