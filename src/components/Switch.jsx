@@ -10,6 +10,7 @@ export default function Switch({ isActive }) {
   return (
     <label className={`switch ${!isOn ? "off" : ""}`}>
       <input type="checkbox" checked={isOn} onChange={handleChange} />
+      <span className="slider"></span>
     </label>
   );
 }
