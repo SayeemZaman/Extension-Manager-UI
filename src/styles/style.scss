@@ -62,4 +62,37 @@ header{
   display: flex;
   margin-top: 16px;
   flex-direction: column;
+  .extension{
+    border-radius: 16px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+    > :nth-child(2){
+      @include bold-font;
+      color: $neutral700;
+      margin-bottom: 32px;
+      p{
+        margin: 0;
+      }
+      > :nth-child(2){
+        @include reg-font;
+        grid-column: span 2;
+        font-size: 14px;
+      }
+    }
+    .control{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .remove{
+        background: none;
+        border: 1px solid $neutral300;
+        padding: 6px 12px;
+        border-radius: 16px;
+        @include med-font;
+      }
+    }
+  }
 }
