@@ -1,0 +1,31 @@
+/* Desktop */
+@media(min-width:700px){
+  #head{
+    display: flex;
+    align-items: flex-end;
+    margin: 32px 0;
+    width: 100%;
+    
+    h1{
+      margin-bottom: 0;
+    }
+    .filter{
+      height: 32px;
+    }
+  }
+  #list{
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    .extension{
+      flex: 1 1 auto;
+      max-width: 275px;
+    }
+  }
+}
+@media(min-width: 1000px){
+  body{
+    margin: 16px 64px;
+  }
+}

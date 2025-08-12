@@ -8,7 +8,7 @@ export default function ExtContainer() {
 
   return (
     <>
-      <div>
+      <div id="head">
         <h1 className="title">Extension List</h1>
         <div id="filterContainer">
           {filters.map((filter, index) => (

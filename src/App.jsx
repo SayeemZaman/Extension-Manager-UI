@@ -1,4 +1,5 @@
 import "./styles/style.scss";
+import "./styles/responsive.scss";
 import Header from "./components/Header.jsx";
 import ExtContainer from "./components/ExtContainer.jsx";
 import { Theme } from "./contexts/theme.jsx";
