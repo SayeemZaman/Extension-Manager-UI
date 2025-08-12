@@ -51,10 +51,17 @@ header{
     padding: 8px 12px;
     border-radius: 16px;
     @include med-font;
-  }
-  .selected{
-    background-color: $red700;
-    color: $neutral0;
+    &:hover{
+      background: $neutral100;
+      color: $neutral600;
+    }
+    &:focus{
+      @include outline($neutral200);
+    }
+    &.selected{
+      background-color: $red700;
+      color: $neutral0;
+    }
   }
 }
 
@@ -100,20 +107,18 @@ header{
         padding: 6px 12px;
         border-radius: 16px;
         @include med-font;
+        &:hover{
+          background: $red700;
+          color: $neutral0;
+          border: none;
+        }
       }
     }
   }
 }
 
-/* Hover & Focus */
-
 button, .switch{
   &:focus{
     @include outline();
-  }
-}
-.filter{
-  &:focus{
-    @include outline($neutral200);
   }
 }
