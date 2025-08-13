@@ -7,7 +7,10 @@ export default function ThemeChanger() {
   const { theme, setTheme } = useContext(Theme);
 
   return (
-    <button id="themeChanger" onClick={() => setTheme(!theme)}>
+    <button
+      id="themeChanger"
+      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+    >
       <img src={theme == "light" ? light : dark} alt="Theme Changer Button" />
     </button>
   );
