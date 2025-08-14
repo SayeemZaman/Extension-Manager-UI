@@ -122,3 +122,52 @@ button, .switch{
     @include outline();
   }
 }
+
+/* Dark Mode */
+
+body:has(.dark){
+  background: $dark-gradient;
+}
+.dark{
+  header{
+    p, h1{
+      color: $neutral0;
+    }
+  }
+  *{
+    box-shadow: none;
+  }
+  p, h1, button{
+    color: $neutral0;
+  }
+  header{
+    background-color: $neutral900;
+    button{
+      background-color: $neutral700;
+      &:focus{
+        @include outline($neutral900);
+      }
+    }
+  }
+  .filter{
+    color: $neutral0;
+    background-color: $neutral700;
+    &:focus{
+      color: $neutral800;
+      @include outline($neutral700);
+    }
+    &.selected{
+      background-color: $red400;
+    }
+  }
+  .extension{
+    background-color: $neutral800;
+    border: 1px solid $neutral600;
+    .remove{
+      background-color: $neutral900;
+      &:focus{
+        @include outline($neutral800);
+      }
+    }
+  }
+}
